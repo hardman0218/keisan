@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電卓</title>
+    <link rel="stylesheet" href="test2.css"></head>
+    <body>
+        <div class="wrap">
+            <h1>ようこそ</h1>
+            <h2></h2>
+            <input
+            class="frame"
+            type="text"
+            id="result"
+            value="0"
+            disabled="disabled"
+            />
+            <div class="push-button">
+                <li>
+                    <button onclick="AllClearKey()">AC</button>
+                    <button onclick="PlusMinusKey()" >±</button>
+                    <button  onclick="AllClearKey()">%</button>
+                    <button onclick="Division()">÷</button>
+                </li>
+                <li>
+                    <button name="seven-value" id="7" value="7" onclick="PushValue(this.id)">7</button>
+                    <button name="eight-value" id="8" value="8" onclick="PushValue(this.id)">8</button>
+                    <button name="nine-value" id="9" value="9" onclick="PushValue(this.id)">9</button>
+                    <button onclick="Multiplication()">×</button>
+                </li>
+                <li>
+                    <button name="four-value" id="4" value="4" onclick="PushValue(this.id)">4</button>
+                    <button name="five-value" id="5" value="5" onclick="PushValue(this.id)">5</button>
+                    <button name="six-value" id="6" value="6" onclick="PushValue(this.id)">6</button>
+                    <button onclick="Minus()">-</button>
+                </li>
+                <li>
+                    <button name="one-value" id="1" value="1" onclick="PushValue(this.id)">1</button>
+                    <button name="two-value" id="2" value="2" onclick="PushValue(this.id)">2</button>
+                    <button name="three-value" id="3" value="3" onclick="PushValue(this.id)">3</button>
+                    <button name="plus-value" id="plux" onclick="Plus()">+</button>
+                </li>
+                <li>
+                    <button name="zero-value" id="0" value="0" onclick="PushValue(this.id)">0</button>
+                    <button name="decimalPoint" id="." onclick="DecimalPoint()">.</button>
+                    <button name="clearEntryKey" id="" onclick="ClearEntryKey()">CE</button>
+                    <button name="equal-value" id="equal" onclick="Equal()">=</button>
+                </li>
+            </div>
+        </div>
+    </body>
+    <script src="test3.js">
+    </script>
+
+</html>
