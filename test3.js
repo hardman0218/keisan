@@ -5,6 +5,7 @@ let symbol="";
 let count=0;
 function PushValue(id)
 {
+    //a
     numberString+=String(id);
     currentValue=parseFloat(numberString);
     let resultForm = document.getElementById("result");
@@ -15,7 +16,6 @@ function Plus()
     if(currentLeftValue===0){
         currentLeftValue=currentValue;
     }else{
-//        console.log(currentLeftValue);        
         currentLeftValue+=currentValue;
     }
     RetentionNumber();
@@ -56,9 +56,6 @@ function PlusMinusKey(){
     resultForm.value = currentValue; 
 }
 function RetentionNumber(){
-    //if(currentLeftValue===0){
-      //  currentLeftValue+=currentValue;
-    //}
     numberString="";
     currentValue=0;
 }
@@ -67,22 +64,21 @@ function DecimalPoint(){
     let resultForm = document.getElementById("result");
     resultForm.value = numberString; 
 }
-function AllClearKey(){
-    numberString="";
-    currentValue=0;
-    symbol="";
-    currentLeftValue=0;
+function AllClearKey() {
+    numberString = "";
+    currentValue = 0;
+    symbol = "";
+    currentLeftValue = 0;
     let resultForm = document.getElementById("result");
-    resultForm.value = numberString; 
+    resultForm.value = numberString;
 }
-function ClearEntryKey(){
-    numberString="";
-    currentValue=0;
+function ClearEntryKey() {
+    numberString = "";
+    currentValue = 0;
     let resultForm = document.getElementById("result");
-    resultForm.value = numberString; 
-}       
-function Equal()
-{
+    resultForm.value = numberString;
+}
+function Equal() {
     switch(symbol){
     case "plus":
         currentLeftValue+=currentValue;
